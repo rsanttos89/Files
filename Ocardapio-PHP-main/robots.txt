@@ -1,0 +1,5 @@
+User-Agent: *
+
+Disallow: /private_files/
+
+Sitemap: https://rosystore.com.br/sitemap.xml

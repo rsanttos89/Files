@@ -1,0 +1,245 @@
+@import url('./global.css');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  color: #00000050;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+/*-------------------------*/
+header {
+  width: 100%;
+  position: sticky;
+  top: -100px;
+  z-index: 9999;
+  background-color: var(--background);
+}
+
+#banner {
+  width: 100%;
+  max-width: 1080px;
+  min-height: 200px;
+  max-height: 200px;
+  color: var(--color-white);
+  background-color: var(--color-red-total);
+  justify-content: space-between;
+  background-image: url('/public/assets/food.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0px 0px 8px 8px;
+}
+
+#logo {
+  margin-top: -50px;
+  min-height: 100px;
+  max-height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  border: solid 3px #fff;
+  background-image: url('/public/assets/food.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+/*-------------------------*/
+#card-info {
+  font-weight: bolder;
+}
+
+#card-info h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#card-info p {
+  margin-bottom: 8px;
+  color: #00000050;
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/*-------------------------*/
+#tabs {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  max-width: 1080px;
+  background-color: var(--background);
+  width: 100%;
+}
+
+#tabs menu {
+  width: 100%;
+  max-width: 1080px;
+  padding: 8px 0px;
+  display: flex;
+  overflow: auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+#tabs menu button {
+  min-width: 160px;
+  max-width: 160px;
+  padding: 12px 32px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: var(--color-white);
+  /* animation: slideInUp 0.5s ease forwards; */
+  box-shadow: 0px 1px 2px rgb(133, 133, 133);
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#tabs menu button.active-button {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+/*-------------------------*/
+#main {
+  width: 100%;
+  background-color: var(--background);
+  padding-bottom: 16px;
+}
+
+#main .box {
+  width: 100%;
+  max-width: 1080px;
+  display: grid;
+  align-items: flex-start;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+#main .box-product {
+  padding: 8px;
+  background-color: var(--background);
+  box-shadow: 0px 1px 2px rgb(133, 133, 133);
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+#main .box-product .imagens {
+  width: 100%;
+  height: 100vh;
+  max-height: 250px;
+  background-image: url('/public/assets/food.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
+#main .box-product .text {
+  min-height: 115px;
+  max-height: 115Spx;
+  text-align: left;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+#main .box-product .title {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+#main .box-product .subtitle {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #00000050;
+  margin: 8px 0px;
+}
+
+/*-------------------------*/
+@media (min-width: 720px) {
+  #main .box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  #main .box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1080px) {
+  #main .box,
+  #tabs menu {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (orientation: portrait) {
+  header {
+    top: -24px;
+    background-color: var(--background);
+  }
+
+  header .row-mobile {
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0px 16px;
+    gap: 16px;
+  }
+
+  #banner {
+    width: 100%;
+    max-width: 1080px;
+    min-height: 100px;
+    max-height: 100px;
+    border-radius: 0px;
+  }
+
+  #logo {
+    margin-top: -25px;
+  }
+
+  #card-info {
+    align-items: flex-start;
+  }
+
+  #card-info h1 {
+    font-size: 1.2rem;
+  }
+
+  #card-info p {
+    display: none;
+  }
+
+  #main .box-product {
+    flex-direction: row;
+    gap: 8px;
+  }
+  #main .box-product .imagens {
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+  }
+  #main .box-product .text {
+    min-height: 100px;
+    max-height: 100px;
+  }
+}

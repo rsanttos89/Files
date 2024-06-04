@@ -1,0 +1,40 @@
+{
+  "short_name": "Ocardápio",
+  "name": "Ocardápio",
+  "description": "Escolha o que desejar e recebe em sua casa de forma rápida e segura.",
+  "icons": [
+    {
+      "src": "./public/assets/icons-pwa/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./public/assets/icons-pwa/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./business",
+  "display": "standalone",
+  "background_color": "#e22b40cb",
+  "theme_color": "#e22b40cb",
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "scope": "/",
+  "serviceworker": {
+    "src": "./service-worker.js",
+    "scope": "./"
+  },
+  "permissions": [
+    "geolocation",
+    "notifications"
+  ],
+  "splash_pages": null,
+  "shortcuts": [],
+  "categories": [],
+  "screenshots": [],
+  "iarc_rating_id": null,
+  "lang": null,
+  "dir": "auto"
+}
