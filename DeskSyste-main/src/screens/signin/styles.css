@@ -1,0 +1,90 @@
+@import url('../../../styles_global.css');
+
+#body {
+  height: 100vh;
+  background: rgb(39,107,156);
+  background: -moz-radial-gradient(circle, rgba(39,107,156,1) 35%, rgba(33,87,137,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(39,107,156,1) 35%, rgba(33,87,137,1) 100%);
+  background: radial-gradient(circle, rgba(39,107,156,1) 35%, rgba(33,87,137,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#276b9c",endColorstr="#215789",GradientType=1);
+  color: var(--text-white);
+}
+
+#body header {
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+#body h1 {
+  color: var(--text-white);
+  text-transform: uppercase;
+}
+
+#box-btns {
+  width: 84px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 16px;
+}
+
+#box-btns button {
+  min-height: 28px;
+  max-height: 28px;
+  min-width: 28px;
+  max-width: 28px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px #72727250;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border-radius: 50%;
+  cursor: default;
+}
+
+#box-btns button:hover {
+  box-shadow: 0px 0px 5px #72727250;
+  border: solid 2px #72727250;
+  opacity: 0.5;
+}
+
+#body main {
+  padding: 8%;
+  gap: 16px;
+}
+
+#body main h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#body main form {
+  gap: 8px;
+}
+
+#body main form input {
+  height: 50px;
+  padding: 0px 16px;
+  border-radius: 2px;
+}
+
+#body main form a {
+  width: auto;
+  color: var(--text-white);
+  align-self: flex-end;
+  font-weight: bold;
+}
+
+#body main form button {
+  height: 50px;
+  max-width: 40%;
+  border-radius: 2px;
+  background-color: var(--background-white);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 50px;
+}

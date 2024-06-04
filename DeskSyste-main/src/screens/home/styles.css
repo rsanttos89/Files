@@ -1,0 +1,167 @@
+@import url('../../../styles_global.css'); 
+
+#navigation-home {
+  background-color: #c2c2c250;
+  border-radius: 4px 0px 0px 4px;
+}
+
+/*------------------------------TOP BAR--------------------------------------*/
+#topbar-home {
+  min-height: var(--dimension-tab);
+  max-height: var(--dimension-tab);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  background: rgb(39,107,156);
+  background: -moz-radial-gradient(circle, rgba(39,107,156,1) 35%, rgba(33,87,137,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(39,107,156,1) 35%, rgba(33,87,137,1) 100%);
+  background: radial-gradient(circle, rgba(39,107,156,1) 35%, rgba(33,87,137,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#276b9c",endColorstr="#215789",GradientType=1);
+  margin-bottom: 4px;
+}
+
+#topbar-home h1 {
+  width: 200px;
+  color: var(--text-white);
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+#topbar-home .data-time {
+  max-width: 50%;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background-color: #c2c2c250;
+  box-shadow: 0px 0px 5px #c2c2c250;
+  color: var(--text-white);
+  font-size: 0.8rem;
+  border-radius: var(--dimension-tab-time);
+  min-height: var(--dimension-tab-time);
+  max-height: var(--dimension-tab-time);
+}
+
+#topbar-home .box-btns {
+  width: 200px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#topbar-home .box-btns button {
+  min-height: var(--dimension-tab-btns);
+  max-height: var(--dimension-tab-btns);
+  min-width: var(--dimension-tab-btns);
+  max-width: var(--dimension-tab-btns);
+  background-color: rgb(39,107,156);
+  box-shadow: 0px 0px 5px #72727250;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border-radius: 50%;
+  cursor: default;
+  margin-left: 12px;
+}
+
+#topbar-home .box-btns button:hover {
+  box-shadow: 0px 0px 5px #72727250;
+  border: solid 2px #72727250;
+  opacity: 0.5;
+}
+
+#topbar-home .box-btns button:active {
+  border: solid 1px #72727250;
+  opacity: 1;
+}
+
+/*------------------------------MAIN--------------------------------------*/
+#main {
+  height: calc(100vh - 114px);
+  background-color: var(--background);
+}
+
+#main #content {
+  height: 100%;
+  overflow: auto;
+  width: auto;
+}
+
+#main #content .btns-tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px 16px;
+  gap: 16px;
+}
+
+#main #content .btns-tools button {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 200px;
+  max-height: 200px;
+  background: rgb(39,107,156);
+  background: -moz-radial-gradient(circle, rgba(39,107,156,1) 100%, rgba(33,87,137,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(39,107,156,1) 100%, rgba(33,87,137,1) 100%);
+  background: radial-gradient(circle, rgba(39,107,156,1) 100%, rgba(33,87,137,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#276b9c",endColorstr="#215789",GradientType=1);
+  box-shadow: 0px 0px 10px #72727250;
+  border-radius: 4px;
+  color: var(--text-white);
+}
+
+#main #content .btns-tools button:hover {
+  opacity: 0.9;
+}
+
+#main #content .btns-tools button span.icon {
+  min-width: 100px;
+  max-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.9;
+}
+
+#main #content .btns-tools button span.product {
+  background-image: url('../../assets/google-icons/white/product.svg');
+}
+
+#main #content .btns-tools button span.seller {
+  background-image: url('../../assets/google-icons/white/seller.svg');
+}
+
+#main #content .btns-tools button span.pdv {
+  background-image: url('../../assets/google-icons/white/pdv.svg');
+}
+
+#main #content .btns-tools button span.dashboard {
+  background-image: url('../../assets/google-icons/white/dashboard.svg');
+}
+
+#main #content .btns-tools button span.reader {
+  background-image: url('../../assets/google-icons/white/reader.svg');
+}
+
+#main #content .btns-tools button span.support {
+  background-image: url('../../assets/google-icons/white/support.svg');
+}
+
+#main #content .btns-tools button span.txt {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+/*------------------------------FOOTER--------------------------------------*/
+footer {
+  min-height: 50px;
+  max-height: 50px;
+  background-color: var(--background-white);
+  color: var(--text-blue);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: bolder;
+}

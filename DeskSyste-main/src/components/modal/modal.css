@@ -1,0 +1,59 @@
+/*------------------------------TOPBAR--------------------------------------*/
+#topbar-modal {
+  min-height: 50px;
+  max-height: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(39,107,156);
+  background: -moz-radial-gradient(circle, rgba(39,107,156,1) 35%, rgba(33,87,137,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(39,107,156,1) 35%, rgba(33,87,137,1) 100%);
+  background: radial-gradient(circle, rgba(39,107,156,1) 35%, rgba(33,87,137,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#276b9c",endColorstr="#215789",GradientType=1);
+}
+
+#topbar-modal h1 {
+  text-align: center;
+  color: var(--text-white);
+  text-transform: capitalize;
+  padding-left: 84px;
+}
+
+#topbar-modal .box-btns {
+  width: 84px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 16px;
+}
+
+#topbar-modal .box-btns button {
+  min-height: 28px;
+  max-height: 28px;
+  min-width: 28px;
+  max-width: 28px;
+  background-color: rgb(39,107,156);
+  box-shadow: 0px 0px 5px #72727250;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border-radius: 50%;
+  cursor: default;
+}
+
+#topbar-modal .box-btns button:hover {
+  box-shadow: 0px 0px 5px #72727250;
+  border: solid 2px #72727250;
+  opacity: 0.5;
+}
+
+#topbar-modal .box-btns button:active {
+  border: solid 1px #72727250;
+  opacity: 1;
+}
+
+/*------------------------------BODY--------------------------------------*/
+#body {
+  height: calc(100vh - 50px);
+  background-color: var(--background-white);
+  overflow: auto;
+}

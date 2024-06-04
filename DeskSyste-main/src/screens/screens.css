@@ -1,0 +1,101 @@
+/*------------------------------TAB TOP--------------------------------------*/
+#topbar-screens {
+  min-height: var(--dimension-tab);
+  max-height: var(--dimension-tab);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  background-color: var(--background-white);
+}
+
+#topbar-screens h1 {
+  width: 200px;
+  color: var(--text-blue);
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+#topbar-screens .data-time {
+  max-width: 75%;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background-color: var(--background);
+  box-shadow: 0px 0px 5px var(--background);
+  color: var(--text-blue);
+  font-size: 0.8rem;
+  border-radius: var(--dimension-tab-time);
+  height: var(--dimension-tab-time);
+}
+
+#topbar-screens .box-btns {
+  width: 200px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#topbar-screens .box-btns button {
+  min-height: var(--dimension-tab-btns);
+  max-height: var(--dimension-tab-btns);
+  min-width: var(--dimension-tab-btns);
+  max-width: var(--dimension-tab-btns);
+  background-color: rgb(39,107,156);
+  box-shadow: 0px 0px 5px #72727250;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border-radius: 50%;
+  cursor: default;
+  margin-left: 12px;
+}
+
+#topbar-screens .box-btns button:hover {
+  box-shadow: 0px 0px 5px #72727250;
+  border: solid 2px #72727250;
+  opacity: 0.5;
+}
+
+#topbar-screens .box-btns button:active {
+  border: solid 1px #72727250;
+  opacity: 1;
+}
+
+/*------------------------------ASIDE--------------------------------------*/
+#aside {
+  height: 100vh;
+  max-width: 48px;
+  box-shadow: 0px 10px 10px #72727250;
+  background: rgb(39,107,156);
+  background: -moz-radial-gradient(circle, rgba(39,107,156,1) 35%, rgba(33,87,137,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(39,107,156,1) 35%, rgba(33,87,137,1) 100%);
+  background: radial-gradient(circle, rgba(39,107,156,1) 35%, rgba(33,87,137,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#276b9c",endColorstr="#215789",GradientType=1);
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+#aside menu {
+  height: 100%;
+  justify-content: center;
+  overflow: auto;
+}
+
+#aside menu button {
+  flex-direction: row;
+  white-space: nowrap;
+}
+#aside menu button.border-top {
+  border-top: solid 1px #c6c6c6;
+}
+
+#aside menu button span.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  min-height: var(--dimension-btns-aside);
+  max-height: var(--dimension-btns-aside);
+  min-width: var(--dimension-btns-aside);
+  max-width: var(--dimension-btns-aside);
+}

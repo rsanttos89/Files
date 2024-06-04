@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="../../app/ipcRenderer.js" defer></script>
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Home</title>
+</head>
+<body>
+  <header id="topbar-home" class="container">
+    <h1>DeskSyste</h1>
+
+    <div class="container" style="-webkit-app-region: drag; height: 60px;">
+      <div class="container data-time" class="container">
+        <span id="currentDateTime">welcome</span>
+      </div>
+    </div>
+
+    <div class="container box-btns">
+      <button id="app-minimize" class="container" style="background-image: url('../../assets/google-icons/white/minimize.svg');"></button>
+      <button id="app-maximize" class="container restore-button"></button>
+      <button id="app-close" class="container" style="background-image: url('../../assets/google-icons/white/close.svg');"></button>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section id="content" class="container">
+      <div class="container btns-tools">
+        <button id="screen-products" class="container">
+          <span class="container icon product"></span>
+          <span class="txt">produtos</span>
+        </button>
+
+        <button id="screen-sellers" class="container">
+          <span class="container icon seller"></span>
+          <span class="txt">vendedores</span>
+        </button>
+
+        <button class="container">
+          <span class="container icon pdv"></span>
+          <span class="txt">caixa</span>
+        </button>
+
+        <button class="container">
+          <span class="container icon dashboard"></span>
+          <span class="txt">dashboard</span>
+        </button>
+
+        <button class="container">
+          <span class="container icon reader"></span>
+          <span class="txt">consultar preço</span>
+        </button>
+
+        <button class="container">
+          <span class="container icon support"></span>
+          <span class="txt">help desk</span>
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

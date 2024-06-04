@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="../../app/ipcRenderer.js" defer></script>
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Vendedores</title>
+</head>
+<body>
+  <section id="body" class="container">
+    <!---------------------------ASIDE----------------------------------->
+    <aside id="aside" class="container">
+      <menu class="container">
+        <button id="screen-home" class="container border-bottom">
+          <span 
+            class="container icon"
+            style="background-image: url('../../assets/google-icons/white/home.svg');"
+          ></span>
+        </button>
+
+        <div class="container">
+          <button id="navigation-products" class="container" title="Produtos">
+            <span 
+              class="container icon"
+              style="background-image: url('../../assets/google-icons/white/product.svg');"
+            ></span>
+          </button>
+
+          <button id="navigation-sellers" class="container" title="Vendedores">
+            <span 
+              class="container icon"
+              style="background-image: url('../../assets/google-icons/white/seller.svg');"
+            ></span>
+          </button>
+        </div>
+      </menu>
+    </aside>
+
+    <div class="container">
+      <header id="topbar-screens" class="container">
+        <h1>DeskSyste</h1>
+
+        <div class="container" style="-webkit-app-region: drag; height: 75px;">
+          <div class="container data-time" class="container">
+            <span id="currentDateTime">welcome</span>
+          </div>
+        </div>
+    
+        <div class="container box-btns">
+          <button id="app-minimize" class="container" style="background-image: url('../../assets/google-icons/white/minimize.svg');"></button>
+          <button id="app-maximize" class="container restore-button"></button>
+          <button id="app-close" class="container" style="background-image: url('../../assets/google-icons/white/close.svg');"></button>
+        </div>
+      </header>
+
+      <!---------------------------MAIN----------------------------------->
+      <main id="main" class="container">
+        <div class="container subtitle">
+          <h2>Lista de Vendedores</h2>
+        </div>
+
+        <div id="search" class="container">
+          <!-- <button id="open-modal-category" class="container">criar categoria</button> -->
+
+          <div class="container" style="flex-direction: row; max-width: 40%; gap: 8px;">
+            <input type="search" name="search-products" id="search-products" placeholder="código ou nome do vendedor">
+            <button class="button-search" style="background-image: url('../../assets/google-icons/white/search.svg');"></button>
+          </div>
+        </div>
+
+        <div class="container sub-header">
+          <div class="container" style="flex-direction: row; gap: 8px; width: auto;">
+            <button id="open-modal-sellers" class="container button">Add vendedor</button>
+
+            <div class="container" style="flex-direction: row; gap: 4px;">
+              <button 
+                class="container icon"
+                style="background-image: url('../../assets/google-icons/update.svg');"
+              ></button>
+
+              <button 
+                class="container icon"
+                style="background-image: url('../../assets/google-icons/edit.svg');"
+              ></button>
+
+              <button 
+                class="container icon"
+                style="background-image: url('../../assets/google-icons/delete.svg');"
+              ></button>
+
+              <select id="filter" name="filter" class="input" style="margin-left: 8px;" required>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="40">40</option>
+                <option value="60">60</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <section id="content" class="container" style="margin-top: 10px;">
+          <header class="container header">
+            <div class="container checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox"/>
+            </div>
+
+            <div class="container label" style="max-width: 125px;">
+              <span>código</span>
+            </div>
+
+            <div class="container label">
+              <span>nome</span>
+            </div>
+
+            <div class="container label" style="max-width: 250px;">
+              <span>telefone</span>
+            </div>
+
+            <div class="container label" style="max-width: 250px;">
+              <span>data de admissão</span>
+            </div>
+          </header>
+
+          <section id="list" class="container">
+            <div class="container content">
+              <div class="container checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox"/>
+              </div>
+  
+              <div class="container label" style="max-width: 125px;">
+                <span>11569</span>
+              </div>
+  
+              <div class="container label">
+                <span>Ricardo dos Santos Sousa</span>
+              </div>
+  
+              <div class="container label" style="max-width: 250px;">
+                <span>(99) 98128-0576</span>
+              </div>
+
+              <div class="container label" style="max-width: 250px;">
+                <span>06/06/2024</span>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </section>
+</body>
+</html>
