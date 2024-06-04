@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "343229261314",
+    "project_id": "ocardapio-android",
+    "storage_bucket": "ocardapio-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343229261314:android:5e66a816340ec96cf8e91b",
+        "android_client_info": {
+          "package_name": "com.ocardapio.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClF2gV68sbvg2MalQAK1cuv3aUw44p_pA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

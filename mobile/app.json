@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "ocardapio",
+    "slug": "ocardapio",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d180e804-486d-4167-a819-37c87ac74a43"
+      }
+    },
+    "android": {
+      "package": "com.ocardapio.android"
+    },
+    "ios": {
+      "bundleIdentifier": "com.ocardapio.ios"
+    }
+  }
+}
