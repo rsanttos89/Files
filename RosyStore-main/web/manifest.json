@@ -1,0 +1,40 @@
+{
+  "short_name": "RosyStore",
+  "name": "RosyStore",
+  "description": "Your app description here",
+  "icons": [
+    {
+      "src": "./public/assets/icons-pwa/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./public/assets/icons-pwa/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "scope": "/",
+  "serviceworker": {
+    "src": "./service-worker.js",
+    "scope": "./"
+  },
+  "permissions": [
+    "geolocation",
+    "notifications"
+  ],
+  "splash_pages": null,
+  "shortcuts": [],
+  "categories": [],
+  "screenshots": [],
+  "iarc_rating_id": null,
+  "lang": null,
+  "dir": "auto"
+}

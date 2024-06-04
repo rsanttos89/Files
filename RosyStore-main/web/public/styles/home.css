@@ -1,0 +1,72 @@
+@import url('./global.css');
+
+#logo, #arrow-back, #more-vert {
+  display: none;
+}
+
+#body .products-list {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+#body .products-list a {
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--card);
+  background: var(--card);
+  color: var(--text-dark);
+}
+
+#body .products-list a:hover {
+  background-color: var(--card-hover);
+  border: 1px solid var(--border-hover);
+}
+
+#body .products-list .box-txt {
+  padding: 16px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+#body .products-list .box-txt h2 {
+  font-weight: 500;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.9rem;
+}
+
+#body .products-list img {
+  max-width: 175px;
+}
+
+#footer-mobile a.home {
+  background-color: var(--card);
+  color: var(--text-light);
+}
+
+@media (orientation: landscape) and (min-width: 800px) {
+  #body .products-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #body .products-list .box-txt h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+  #body .products-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #body .products-list .box-txt h2 {
+    font-size: 1.1rem;
+  }
+}

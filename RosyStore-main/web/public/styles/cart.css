@@ -1,0 +1,142 @@
+@import url('./global.css');
+#arrow-back {
+  display: none;
+}
+
+main {
+  margin-top: 90px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#carrinho-container {
+  padding-bottom: 139px;
+}
+
+.box-cart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px var(--border);
+  padding: 16px 0px;
+  gap: 16px;
+}
+
+.box-cart .img {
+  min-width: 100px;
+  max-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card);
+  border: solid 1px var(--border);
+  border-radius: 0px 8px;
+}
+
+.big-box-txt {
+  min-height: 100px;
+  max-height: 100px;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.box-txt {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.box-input-amount {
+  width: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px var(--border);
+  border-radius: 8px;
+  padding: 8px 16px;
+  gap: 16px;
+}
+
+.box-input-amount button {
+  background-color: var(--tab-hover);
+}
+
+.box-input-amount input {
+  background-color: transparent;
+}
+
+.box-input-amount button,
+.box-input-amount input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  text-align: center;
+}
+
+#footer-mobile a.cart {
+  background-color: var(--card);
+  color: var(--text-light);
+}
+
+#box-total-mobile {
+  padding: 16px;
+  min-height: 150px;
+  max-height: 150px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  position: fixed;
+  z-index: 99;
+  bottom: 50px;
+  font-weight: bold;
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+}
+
+#box-total-mobile .box-txt {
+  padding: 8px 0px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#box-total-mobile button {
+  width: 100%;
+  padding: 8px 16px;
+  min-height: 50px;
+  max-height: 50px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+}
+
+#total-cart {
+  font-size: 2rem;
+  text-align: right;
+}
+
+@media (orientation: portrait) {
+  #sort {
+    display: flex;
+  }
+  .header-desktop {
+    display: none;
+  }
+  .bottom {
+    display: flex;
+  }
+}

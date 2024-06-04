@@ -1,0 +1,54 @@
+@import url('./global.css');
+#arrow-back {
+  display: none;
+}
+
+main {
+  margin-top: 90px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box-favorite {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 16px;
+  margin-bottom: 16px;
+  border: solid 1px var(--button);
+  border-radius: 4px;
+  gap: 16px;
+}
+
+.box-favorite .img {
+  min-width: 100px;
+  max-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card);
+  border-radius: 2px;
+}
+
+.big-box-txt {
+  height: 100px;
+  justify-content: center;
+  padding: 4px 0px;
+}
+
+.box-txt {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#footer-mobile a.favorite {
+  background-color: var(--card);
+  color: var(--text-light);
+}
